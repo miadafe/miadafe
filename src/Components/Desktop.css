@@ -1,0 +1,51 @@
+.desktop{
+    /* position: fixed;
+    width: 100%; */
+    font-family: "Lucida Console", monospace;
+}
+
+.icon{
+    height: 170px;
+    width: 170px;
+}
+
+
+
+.top_tooltip .pretend_tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    /* bottom: 100%; */
+    /* left: 50%; */
+    /* margin-left: -60px; */
+    background-color: black;
+    color: #fff;
+    text-align: center;
+
+
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+  
+  .pretend_tooltip .pretend_tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+   }
+   
+  .pretend_tooltip:hover .pretend_tooltiptext {
+    visibility: visible;
+  } 
+
+  .top_tooltip:hover .pretend_tooltiptext {
+    visibility: visible;
+  } 
