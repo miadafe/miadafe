@@ -1,6 +1,6 @@
 .desktop{
-    /* position: fixed;
-    width: 100%; */
+    width: 100%; 
+    margin: 50px;
     font-family: "Lucida Console", monospace;
 }
 
@@ -8,8 +8,6 @@
     height: 170px;
     width: 170px;
 }
-
-
 
 .top_tooltip .pretend_tooltiptext{
     visibility: hidden;

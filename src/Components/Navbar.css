@@ -1,7 +1,6 @@
 .navbar{
     top:  30px;
     position:fixed;
-    /* bottom: 0; */
     left:50%;
     transform: translate(-50%, -50%);
     font-family: "Lucida Console", monospace;
@@ -9,7 +8,10 @@
 
 }
 
-
 span{
     color: #dafe11;
+}
+
+a{
+ color: #dafe11
 }
