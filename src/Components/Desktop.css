@@ -7,6 +7,7 @@
 .icon{
     height: 170px;
     width: 170px;
+    margin:5px;
 }
 
 .top_tooltip .pretend_tooltiptext{

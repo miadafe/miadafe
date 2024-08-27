@@ -19,7 +19,7 @@ export function Desktop(){
                     <Link to="/page1">
                         <img src={iconA} className="icon"/>
                     </Link>
-                    <span className="pretend_tooltiptext">go to page 1</span>
+                    <div className="pretend_tooltiptext">go to page 1</div>
                 </div>
                 </Grid>
 
@@ -28,7 +28,7 @@ export function Desktop(){
                     <Link to="/page2">
                         <img src={iconA} className="icon"/>
                     </Link>
-                    <span className="pretend_tooltiptext">go to page 2</span>
+                    <div className="pretend_tooltiptext">go to page 2</div>
                 </div>
                 </Grid>
 
@@ -37,7 +37,7 @@ export function Desktop(){
                      <Link to="/page3">
                         <img src={iconA} className="icon"/>
                     </Link>
-                    <span className="pretend_tooltiptext">go to page 3</span>
+                    <div className="pretend_tooltiptext">go to page 3</div>
                 </div>
                 </Grid>
             </Grid>
@@ -49,7 +49,7 @@ export function Desktop(){
                     <Link to="/">
                         <img src={iconA} className="icon"/>
                     </Link>
-                    <span className="pretend_tooltiptext">this page doesnt exist (4)</span>
+                    <div className="pretend_tooltiptext">this page doesnt exist (4)</div>
                 </div>
                 </Grid>
                 
@@ -58,7 +58,7 @@ export function Desktop(){
                     <Link to="/">
                         <img src={iconA} className="icon"/>
                     </Link>
-                    <span className="pretend_tooltiptext">this page doesnt exist (5)</span>
+                    <div className="pretend_tooltiptext">this page doesnt exist (5)</div>
                 </div>
                 </Grid>
             </Grid>
@@ -71,7 +71,7 @@ export function Desktop(){
                     <Link to="/">
                         <img src={iconA} className="icon"/>
                     </Link>
-                    <span className="pretend_tooltiptext">doesnt exist (6)</span>
+                    <div className="pretend_tooltiptext">doesnt exist (6)</div>
                 </div>
                 </Grid>
 
@@ -80,16 +80,16 @@ export function Desktop(){
                     <Link to="/">
                         <img src={iconA} className="icon"/>
                     </Link>
-                    <span className="pretend_tooltiptext">doesnt exist (7)</span>
+                    <div className="pretend_tooltiptext">doesnt exist (7)</div>
                 </div>
                 </Grid>
-                
+
                 <Grid item>
                 <div className="pretend_tooltip"> 
                     <Link to="/">
                         <img src={iconA} className="icon"/>
                     </Link>
-                    <span className="pretend_tooltiptext">doesnt exist (8)</span>
+                    <div className="pretend_tooltiptext">doesnt exist (8)</div>
                 </div>
                 </Grid>
             </Grid>
