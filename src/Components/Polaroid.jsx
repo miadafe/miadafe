@@ -1,11 +1,11 @@
-import iconA from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/damn.jpeg';
 import "./Polaroid.css"
 
-
-export function Polaroid(){
+export function Polaroid(props){
     return(
         <div className='frame'>
-            <img src={iconA} className="polaroid-pic"/>
+            <img src={props.img} className="polaroid-pic"/>
+
+            <p className="scribble"> {props.scribble} </p>
         </div>
     )
 }

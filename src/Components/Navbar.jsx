@@ -4,10 +4,10 @@ import "./Navbar.css"
 export function Navbar(){
     return(
         <div className="navbar">
-            <Link to="/">Home</Link><span>/</span>
-            <Link to="/page1">Page1</Link><span>/</span>
-            <Link to="/page2">...</Link><span>/</span>
-            <Link to="/page3">nope</Link>
+            <Link to="/">home</Link><span>/</span>
+            <Link to="/page1">polaroid wheel</Link><span>/</span>
+            <Link to="/page2">projects</Link><span>/</span>
+            <Link to="/page3">book diary</Link>
         </div>
     )
 }

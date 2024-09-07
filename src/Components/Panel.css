@@ -1,0 +1,23 @@
+.panel{
+    display: flex;
+    flex-direction: column;
+    background-color: #cb1999;
+    border-radius: 10px;
+    padding: 10px 8px 100px 8px;
+    margin: 40px;
+    width: 300px;
+    height: 100px;
+}
+
+.title{
+    font-family: "Lucida Console", monospace;
+    font-weight: 600; 
+}
+
+.button-list{
+    top:  30px;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-family: "Lucida Console", monospace;
+    display: flex;
+}

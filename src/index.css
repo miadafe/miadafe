@@ -11,6 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+.horizontal{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.scrolling{
+  display: flex;
+  flex-direction: column;
+}
 
 body {
   background-color: navy;
@@ -29,4 +39,26 @@ h1 {
 
 .p3 {
   font-family: "Lucida Console", monospace;
+}
+
+.list{
+  margin:60px;
+  color: #dafe11;
+  font-family: "Lucida Console", monospace;
+  text-decoration: underline;
+}
+
+.clicker{
+  height: 30px;
+  font-family: "Lucida Console", monospace;
+  color: darkred !important; 
+  background-color: white!important;
+  border-color: darkred;
+  border-width: 8px;
+}
+
+.clicker-container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
