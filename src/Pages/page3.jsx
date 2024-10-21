@@ -6,12 +6,14 @@ import iconB from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/coffee-r
 import iconC from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/lain.png';
 import "../../src/index.css"
 import { BookDiary } from "../Components/BookDiary";
+import {Alert} from "../Components/Alert";
 
 
 export function Page3(){
 
     return(
-        <div>
+        <div className="page3">
+            <Alert></Alert>
             <BookDiary></BookDiary>
         </div>
     )

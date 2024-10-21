@@ -7,30 +7,27 @@ import iconC from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/lain.png
 import { Button } from "@mui/material";
 import { useState } from "react";
 import "../../src/index.css"
+import { useStoreActions, useStoreState } from "easy-peasy";
+import { PhotoClicker } from "../Components/PhotoClicker"
+
+const icons = [iconA, iconB, iconC];
+
 
 export function Page1(){
-const icons = [iconA, iconB, iconC];
-let [count, setCount] = useState(0)
+    let wheelNumber = useStoreState(state => state.wheelNumber);
 
-function incrementCount() {
-    setCount(count += 1);
-    if (count >= icons.length){
-        setCount(0);
-    }
-    console.log(count);
-}
-
+    
     return(
         <>
             <h1>polaroid wheel</h1>
-            <div className="horizontal">
-                <Polaroid img={icons[count]} />
-
-                <div className="clickerContainer">
-                    <Button onClick={incrementCount} className="clicker">click me</Button>
-                </div>  
+            <div className="polaroid-w-buttons">
+                <Polaroid img={icons[wheelNumber]} />
+                <PhotoClicker></PhotoClicker>
             </div>
+            
+            <ScrapbookPage/>
+            
             <ScrapbookPage/>
         </>
     )
-}
+    }
