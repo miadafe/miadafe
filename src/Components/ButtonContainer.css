@@ -1,0 +1,16 @@
+.button-container{
+    display: flex;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+}
+/* 
+.red{
+    background-color: red;
+}
+
+.purple{
+    background-color: purple;
+} */

@@ -5,8 +5,11 @@
     transform: translate(-50%, -50%);
     font-family: "Lucida Console", monospace;
     display: flex;
-
+    background-color: #000080;
+    height: max-content;
 }
+
+
 
 span{
     color: #dafe11;

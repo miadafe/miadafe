@@ -12,12 +12,20 @@
 .title{
     font-family: "Lucida Console", monospace;
     font-weight: 600; 
+    color:#dafe11;
 }
 
 .button-list{
-    top:  30px;
-    left:50%;
-    transform: translate(-50%, -50%);
     font-family: "Lucida Console", monospace;
     display: flex;
+}
+
+Button{
+    font-family: "Lucida Console", monospace !important; 
+    color:#dafe11 !important;
+
+}
+
+span{
+    color: #dafe11;
 }

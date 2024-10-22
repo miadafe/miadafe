@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import iconA from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/damn.jpeg';
-
+import lainDad from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/lain-dad.jpeg';
 
 export function Desktop(){
     return(
@@ -47,7 +47,7 @@ export function Desktop(){
                 <Grid item xs={0}>
                 <div className="pretend_tooltip"> 
                     <Link to="/">
-                        <img src={iconA} className="icon"/>
+                        <img src={lainDad } className="icon"/>
                     </Link>
                     <div className="pretend_tooltiptext">this page doesnt exist (4)</div>
                 </div>

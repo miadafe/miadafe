@@ -1,0 +1,24 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    width: 300px;
+    height: 100px;
+}
+
+.flipcard-pic{
+    font-family: "Lucida Console", monospace;
+    font-weight: 600; 
+    color:#dafe11;
+}
+
+.flipcard-text{
+    font-family: "Lucida Console", monospace;
+    font-weight: 600; 
+    color:#dafe11;
+    opacity: 0%;
+}
+/* on hover mave visibles */

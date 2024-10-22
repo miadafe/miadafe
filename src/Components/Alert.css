@@ -1,0 +1,20 @@
+.alert{
+    display: flex;
+    flex-direction: column;
+    background-color: #cb1999;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    /* width: 300px;
+    height: 100px; */
+    border-color: #dafe11;
+    border-width: 5px;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
