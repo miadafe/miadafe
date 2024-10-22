@@ -25,16 +25,23 @@ code {
 body {
   background-color: navy;
   margin: 10px;
+  margin-top: 90px;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center ;
+  /* place-items: center; */
+  /* min-width: 320px;
+  min-height: 100vh; */
 }
 
 h1 {
   font-family: "Lucida Console", monospace;
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+p {
+  font-family: "Lucida Console", monospace;
 }
 
 .p3 {
@@ -61,4 +68,11 @@ h1 {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+}
+
+.page3{
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  margin: auto; 
 }

@@ -1,0 +1,41 @@
+/* already exists in indec.css */
+/* h1 {
+    font-family: "Lucida Console", monospace;
+    font-size: 3.2em;
+    line-height: 1.1;
+  } */
+
+  
+  h2 {
+    font-family: "Lucida Console", monospace;
+    font-size: 2em;
+    line-height: 0.8em;
+  }
+  
+.bookdiary-oneliner{
+    font-family: "Lucida Console", monospace;
+    font-size: 2em;
+    line-height: 0.8em;
+  }
+/* .bookdiary-date{
+ 
+} */
+
+  .bookdiary-content{
+    font-family: "Lucida Console", monospace;
+    font-size: 2em;
+    line-height: 1em; 
+      
+}
+
+.bookdiary-img{
+    margin: 80px 0px;
+}
+
+.container{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin: 30px 15px;
+}

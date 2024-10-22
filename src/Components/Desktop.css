@@ -10,26 +10,6 @@
     margin:5px;
 }
 
-.top_tooltip .pretend_tooltiptext{
-    visibility: hidden;
-    width: 120px;
-    /* bottom: 100%; */
-    /* left: 50%; */
-    /* margin-left: -60px; */
-    background-color: black;
-    color: #fff;
-    text-align: center;
-
-
-    border-radius: 6px;
-    padding: 5px 0;
-
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px;
-}
   
   .pretend_tooltip .pretend_tooltiptext {
     visibility: hidden;
@@ -48,3 +28,22 @@
   .top_tooltip:hover .pretend_tooltiptext {
     visibility: visible;
   } 
+
+  .main-container-for-3-horizontals{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .row-sharing-3-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .row-sharing-2-icons{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+  }
+
