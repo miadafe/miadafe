@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/miadafe/static/css/main.7e78fa34.css",
-    "main.js": "/miadafe/static/js/main.1c04e0ae.js",
+    "main.css": "/miadafe/static/css/main.12e5ec2a.css",
+    "main.js": "/miadafe/static/js/main.1159bc15.js",
     "static/js/453.5caece00.chunk.js": "/miadafe/static/js/453.5caece00.chunk.js",
     "static/media/lain.png": "/miadafe/static/media/lain.4a58057fe39a1487eee4.png",
+    "static/media/lain-dad.jpeg": "/miadafe/static/media/lain-dad.a22ad984a7e8841cd5fd.jpeg",
     "static/media/coffee-run.jpeg": "/miadafe/static/media/coffee-run.0a08094cac4c53409444.jpeg",
     "static/media/damn.jpeg": "/miadafe/static/media/damn.29fe8a74fd8e2ec7c8f4.jpeg",
     "index.html": "/miadafe/index.html",
-    "main.7e78fa34.css.map": "/miadafe/static/css/main.7e78fa34.css.map",
-    "main.1c04e0ae.js.map": "/miadafe/static/js/main.1c04e0ae.js.map",
+    "main.12e5ec2a.css.map": "/miadafe/static/css/main.12e5ec2a.css.map",
+    "main.1159bc15.js.map": "/miadafe/static/js/main.1159bc15.js.map",
     "453.5caece00.chunk.js.map": "/miadafe/static/js/453.5caece00.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e78fa34.css",
-    "static/js/main.1c04e0ae.js"
+    "static/css/main.12e5ec2a.css",
+    "static/js/main.1159bc15.js"
   ]
 }
