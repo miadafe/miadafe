@@ -14,7 +14,12 @@ export function Page3(){
     return(
         <div className="page3">
             <Alert></Alert>
-            <BookDiary></BookDiary>
+            {/* <BookDiary></BookDiary> */}
+
+
+            <ScrapbookPage/>
+            
+            <ScrapbookPage/>
         </div>
     )
 }

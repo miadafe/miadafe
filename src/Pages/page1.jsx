@@ -19,15 +19,11 @@ export function Page1(){
     
     return(
         <>
-            <h1>polaroid wheel</h1>
+            <h1>polaroid..imagine if this was clickable and you could scroll through all my polaroids</h1>
             <div className="polaroid-w-buttons">
                 <Polaroid img={icons[wheelNumber]} />
-                <PhotoClicker></PhotoClicker>
+                {/* <PhotoClicker></PhotoClicker> */}
             </div>
-            
-            <ScrapbookPage/>
-            
-            <ScrapbookPage/>
         </>
     )
     }

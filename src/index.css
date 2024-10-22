@@ -73,6 +73,6 @@ p {
 .page3{
   display: flex;
   justify-content: center;
-  /* flex-direction: column;
-  margin: auto; */
+  flex-direction: column; 
+  margin: auto; 
 }
