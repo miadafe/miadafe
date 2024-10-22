@@ -1,28 +1,40 @@
 import { Button } from "@mui/material"
 import "./Panel.css"
 import "./Navbar.css"
-import { useState } from "react"
-
-export function Panel(props){
-let views = ["list view", "photo view"]
-let [view, setView] = useState(0)
+import { useStoreActions, useStoreState } from "easy-peasy";
 
 
-function toggleView(){
+export function Panel(){
+//let views = ["list view", "photo view", "archive view"];
+let views = useStoreState(state => state.views);
+const setArchiveView  = useStoreActions(state => state.setArchiveView);
 
-    setView(view+=1);
-    if (view >= views.length){
-        view = 0;
-    }
-}
+
+// function toggleView(payload){
+
+//     setArchiveView(payload);
+//     if (view >= views.length){
+//         view = 0;
+//     }
+// }
+// what i actually want is a list of 3 and those are clickable and that sets  the state no. which is the view
 
     return(
         <div className='panel'>
-            <h3 className="title">{props.title}</h3>
             
             <div className="button-list">
-                <span><Button onClick={toggleView}>{views[view]}</Button>/<Button>archive view</Button></span>
+                {/* <span><Button onClick={toggleView}>{views[view]}</Button>/</span> */}
+            
+            
+            {/* {views.map(({i, view}) => (<Button key={i} onClick={toggleView(i)}>{views[view]}</Button>))} */}
+
+            {views.map(view => (
+                <p>{view}</p>
+            ))}
+            
             </div>
+
+    
         </div>
     )
 }

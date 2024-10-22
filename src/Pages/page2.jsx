@@ -14,19 +14,22 @@ export function Page2(){
     const projects = ["star bikini", "granny square blanket", "swirly bag", "granny square bag", "heart jumper", "checker scarf"];
     let [view, setView] = useState(0);
 
-    function changeView(){
 
-    }
 
 
 
     return(
         <div>
             <div className="horizontal">
-                <Panel title={"crochet"}></Panel>
+                <Panel></Panel>
 
                 <div className="scrolling">
-                    {/* { state.view == 0 ? 
+
+                        {projects.map((project) => (
+                            <p className="list">{project}</p>        
+                        )) }
+
+                         {/* { state.view == 0 ? 
                         projects.map((project) => (
                             <p className="list">{project}</p>        
                         )) 
