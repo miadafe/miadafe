@@ -1,7 +1,11 @@
 .desktop{
-    width: 100%; 
-    margin: 50px;
+    /* width: 100%;  */
+    /* margin: 50px; */
     font-family: "Lucida Console", monospace;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    margin: auto; 
 }
 
 .icon{

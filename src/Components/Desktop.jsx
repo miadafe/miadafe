@@ -6,7 +6,12 @@ import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import iconA from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/damn.jpeg';
-import lainDad from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/lain-dad.jpeg';
+import lainDad from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/lain-dad-square.png';
+import lainMonitors from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/lain-monitors-square-better.png';
+import othello from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/othello-bg-square.png';
+import lainBedroom from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/lain-bedroom-square.png';
+import city from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/city.jpg';
+
 
 export function Desktop(){
     return(
@@ -47,7 +52,7 @@ export function Desktop(){
                 <Grid item xs={0}>
                 <div className="pretend_tooltip"> 
                     <Link to="/">
-                        <img src={lainDad } className="icon"/>
+                        <img src={lainMonitors } className="icon"/>
                     </Link>
                     <div className="pretend_tooltiptext">this page doesnt exist (4)</div>
                 </div>
@@ -56,7 +61,7 @@ export function Desktop(){
                 <Grid item xs={0}>
                 <div className="pretend_tooltip"> 
                     <Link to="/">
-                        <img src={iconA} className="icon"/>
+                        <img src={lainDad} className="icon"/>
                     </Link>
                     <div className="pretend_tooltiptext">this page doesnt exist (5)</div>
                 </div>
@@ -69,7 +74,7 @@ export function Desktop(){
                 <Grid item xs={0}>
                 <div className="pretend_tooltip"> 
                     <Link to="/">
-                        <img src={iconA} className="icon"/>
+                        <img src={city} className="icon"/>
                     </Link>
                     <div className="pretend_tooltiptext">doesnt exist (6)</div>
                 </div>
@@ -78,7 +83,7 @@ export function Desktop(){
                 <Grid item>
                 <div className="pretend_tooltip"> 
                     <Link to="/">
-                        <img src={iconA} className="icon"/>
+                        <img src={othello} className="icon"/>
                     </Link>
                     <div className="pretend_tooltiptext">doesnt exist (7)</div>
                 </div>
@@ -87,9 +92,9 @@ export function Desktop(){
                 <Grid item>
                 <div className="pretend_tooltip"> 
                     <Link to="/">
-                        <img src={iconA} className="icon"/>
+                        <img src={lainBedroom} className="icon"/>
                     </Link>
-                    <div className="pretend_tooltiptext">doesnt exist (8)</div>
+                    <div className="pretend_tooltiptext">still doesnt exist (8)</div>
                 </div>
                 </Grid>
             </Grid>
