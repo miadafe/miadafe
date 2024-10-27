@@ -11,7 +11,8 @@ import lainMonitors from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/l
 import othello from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/othello-bg-square.png';
 import lainBedroom from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/lain-bedroom-square.png';
 import city from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/city.jpg';
-
+import crochetIcon from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/mirror-bag-square.png';
+import books from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/books.jpg';
 
 export function Desktop(){
     return(
@@ -31,7 +32,7 @@ export function Desktop(){
                 <Grid item>
                 <div className="pretend_tooltip"> 
                     <Link to="/page2">
-                        <img src={iconA} className="icon"/>
+                        <img src={crochetIcon} className="icon"/>
                     </Link>
                     <div className="pretend_tooltiptext">go to page 2</div>
                 </div>
@@ -40,7 +41,7 @@ export function Desktop(){
                 <Grid item>
                 <div className="pretend_tooltip">
                      <Link to="/page3">
-                        <img src={iconA} className="icon"/>
+                        <img src={books} className="icon"/>
                     </Link>
                     <div className="pretend_tooltiptext">go to page 3</div>
                 </div>
