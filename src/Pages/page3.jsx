@@ -12,7 +12,7 @@ import {Alert} from "../Components/Alert";
 export function Page3(){
 
     return(
-        <div className="page3">
+        <div className="centered-columns">
             <Alert></Alert>
             {/* <BookDiary></BookDiary> */}
 

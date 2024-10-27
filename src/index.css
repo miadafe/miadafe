@@ -16,6 +16,12 @@ code {
   flex-direction: row;
 
 }
+.centered-columns{
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  margin: auto; 
+}
 
 .scrolling{
   display: flex;
@@ -70,9 +76,3 @@ p {
   align-items: flex-end;
 }
 
-.page3{
-  display: flex;
-  justify-content: center;
-  flex-direction: column; 
-  margin: auto; 
-}
