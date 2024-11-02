@@ -8,6 +8,7 @@ import "../../src/index.css"
 import { Panel } from "../Components/Panel";
 import { useState, useEffect, useStore} from "react";
 import { getStaticContextFromError } from "@remix-run/router";
+import { PhotoView } from "../Components/PhotoView";
 
 
 export function Page2(){
@@ -21,21 +22,24 @@ export function Page2(){
     return(
         <div>
             <div className="horizontal">
-                <Panel></Panel>
+                {/* works at bringing in from state but not to plan anymore !!
+                <Panel></Panel> */}
 
                 <div className="scrolling">
-
+                        
+                        {/* so eventally i am conditionally rendering this or pics */}
+                        <div className="left-third">
                         {projects.map((project) => (
                             <p className="list">{project}</p>        
                         )) }
-
-                         {/* { state.view == 0 ? 
-                        projects.map((project) => (
-                            <p className="list">{project}</p>        
-                        )) 
-                        : 
-                        <p className="pics-list">pics coming soon</p> } */}
+                        </div>
+                            
+                            {/* make photo view work like panel up there !! */}
+                            {/* <PhotoView></PhotoView> */}   
                 </div>
+
+                <p className="pics-list">pics coming soon</p>
+
             </div>
         </div>
     )

@@ -6,7 +6,7 @@ import { Polaroid } from './Polaroid';
 import { Note} from './Note';
 
 
-export function ScrapbookPage(props){
+export function ScrapbookPage(){
 const scrapbookPage ={
     text:"heyy uhhhh .. is this thing on?",
     img:iconA,

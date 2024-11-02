@@ -5,27 +5,29 @@ import "./BookDiary.css"
 import { Polaroid } from './Polaroid';
 import { Note} from './Note';
 import {PhotoProject} from './PhotoProject'
+import { useStoreActions, useStoreState } from "easy-peasy";
+
 
 export function PhotoView(){
 
-const projectViewModel = [
-    {title:"Star Bikini",
-    photo:"mr man",
-    photoCaption:"croatia 2022",
-    img:iconA,
-    starRating: 3,
-    content: "i loled",
-    dateFinished: "11:04:24"
-    },
-    {title:"heyy uhhhh .. is this thing on?",
-    author:"mr man",
-    oneliner:"i read this in a day because i loved it",
-    img:iconA,
-    starRating: 3,
-    content: "i loled",
-    dateFinished: "11:04:24"
-    } 
-]   
+    const projectViewModel = useStoreState(state => state.photoProjectModel);
+
+// const projectViewModel = [
+//     {
+//     title:"Star Bikini",
+//     photos:["bikini 1 filler", "bikini 2 filler"],
+//     photoCaption:"croatia 2022",
+//     content: "i loled",
+//     dateFinished: "11:04:24"
+//     },
+//     {
+//     title:"Grany Square Blanket",
+//     photos:["mr man","a second", "a third"],
+//     photoCaption:"croatia 2022",
+//     content: "i loled",
+//     dateFinished: "sometime etween august and now"
+//     } 
+// ]   
 
     return(
         <div>
@@ -35,7 +37,7 @@ const projectViewModel = [
             })} */}
              {projectViewModel.map((project) => {
                 //make a component for book diary entry
-                <PhotoProject title={entry.title} author={entry.author} oneliner={entry.oneliner} img={entry.img} starRating={entry.starRating} content={entry.content} dateFinished={entry.dateFinished}/>
+                <PhotoProject title={project.title} photos={project.photos} photoCaption={project.photoCaption} content={project.content} dateFinished={project.dateFinished}/>
             })}
 
         </div>
