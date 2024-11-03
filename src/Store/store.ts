@@ -11,6 +11,7 @@ export interface PhotoProjectModel{
 
 export interface StoreModel{
     wheelNumber: number;
+    mainImg: number;
     views: string[];
     setWheelNumber: Action<StoreModel, number>;
     archiveView: number;
@@ -20,6 +21,7 @@ export interface StoreModel{
 
 const store: StoreModel= {
     wheelNumber: 0,
+    mainImg:0,
     views:["list view", "photo view", "archive view"],
     setWheelNumber: action((state, payload)=>{
         state.wheelNumber = payload;

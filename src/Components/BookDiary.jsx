@@ -2,8 +2,6 @@ import iconA from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/damn.jpe
 import iconB from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/coffee-run.jpeg';
 import iconC from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/lain.png';
 import "./BookDiary.css"
-import { Polaroid } from './Polaroid';
-import { Note} from './Note';
 import {BookDiaryEntry} from './BookDiaryEntry'
 
 export function BookDiary(){

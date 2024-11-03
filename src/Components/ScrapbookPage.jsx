@@ -16,7 +16,7 @@ const scrapbookPage ={
     return(
         <div className='page'>
             <Note text={scrapbookPage.text}/>
-            <Polaroid img={iconA} scribble={scrapbookPage.polaroidScribble}/>
+            <Polaroid img={iconA} scribble={scrapbookPage.polaroidScribble} size={"large"}/>
         </div>
     )
 }

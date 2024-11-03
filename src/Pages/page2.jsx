@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import { Polaroid } from "../Components/Polaroid"
 import { ScrapbookPage } from "../Components/ScrapbookPage"
 import iconA from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/damn.jpeg';
 import iconB from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/coffee-run.jpeg';

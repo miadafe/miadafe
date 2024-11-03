@@ -14,11 +14,11 @@ code {
 .horizontal{
   display: flex;
   flex-direction: row;
-
 }
+
 .centered-columns{
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column; 
   margin: auto; 
 }
@@ -72,7 +72,8 @@ p {
 
 .clicker-container{
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
 }
 
