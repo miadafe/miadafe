@@ -8,14 +8,14 @@ import { Panel } from "../Components/Panel";
 import { useState, useEffect, useStore} from "react";
 import { getStaticContextFromError } from "@remix-run/router";
 import { PhotoView } from "../Components/PhotoView";
+import { PhotoProject } from "../Components/PhotoProject";
 
 
 export function Page2(){
+    //import project titles from state title
     const projects = ["star bikini", "granny square blanket", "swirly bag", "granny square bag", "heart jumper", "checker scarf"];
+
     let [view, setView] = useState(0);
-
-
-
 
 
     return(
@@ -32,13 +32,16 @@ export function Page2(){
                             <p className="list">{project}</p>        
                         )) }
                         </div>
-                            
-                            {/* make photo view work like panel up there !! */}
-                            {/* <PhotoView></PhotoView> */}   
+
+                       
                 </div>
 
-                <p className="pics-list">pics coming soon</p>
 
+                        <div className="right-2-thirds">
+                            {/* make photo view work like panel up there !! */}
+                            {/* <PhotoView></PhotoView>    */}
+                            <PhotoProject></PhotoProject>
+                        </div>
             </div>
         </div>
     )

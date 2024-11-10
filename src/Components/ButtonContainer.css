@@ -1,5 +1,6 @@
 .button-container{
     display: flex;
+    flex-direction: row;
     border-radius: 50%;
     padding: 10px;
     margin: 10px;

@@ -16,6 +16,16 @@ code {
   flex-direction: row;
 }
 
+.left-third{
+  display:flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+.right-2-thirds{
+  width: 66%;
+}
+
 .centered-columns{
   display: flex;
   /* justify-content: center; */
@@ -46,8 +56,15 @@ h1 {
   line-height: 1.1;
 }
 
+h2 {
+  font-family: "Lucida Console", monospace;
+  color: #dafe11;
+  text-decoration:underline;
+}
+
 p {
   font-family: "Lucida Console", monospace;
+  color: #dafe11;
 }
 
 .p3 {

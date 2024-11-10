@@ -1,0 +1,12 @@
+.project-img{
+    width:220px;
+    margin: 8px 8px;
+}
+
+.project-caption{
+    text-align: left;
+}
+
+.project-dateFinished{
+    text-align: right;
+}
