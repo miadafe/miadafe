@@ -29,7 +29,7 @@ export function BookDiary(){
 
     return(
         <div>
-            {bookDiaries.map((entry, index) => {
+            {bookDiaries.map((entry, index) => (
                 //make a component for book diary entry?
                 // <BookDiaryEntry title={entry.title} author={entry.author} img={entry.img} starRating={entry.starRating} content={entry.content} dateFinished={entry.dateFinished}/>
                 <div key={index}>
@@ -44,7 +44,7 @@ export function BookDiary(){
                 </div> */}
               </div>
 
-           })}
+            ))}
         </div>
     )
 }
