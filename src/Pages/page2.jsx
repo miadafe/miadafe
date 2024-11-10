@@ -9,11 +9,15 @@ import { useState, useEffect, useStore} from "react";
 import { getStaticContextFromError } from "@remix-run/router";
 import { PhotoView } from "../Components/PhotoView";
 import { PhotoProject } from "../Components/PhotoProject";
+import { useStoreState } from "easy-peasy";
 
 
 export function Page2(){
     //import project titles from state title
-    const projects = ["star bikini", "granny square blanket", "swirly bag", "granny square bag", "heart jumper", "checker scarf"];
+
+    const projects = useStoreState(state => state.photoProjectModels);
+
+    //const projects = ["star bikini", "granny square blanket", "swirly bag", "granny square bag", "heart jumper", "checker scarf"];
 
     let [view, setView] = useState(0);
 
@@ -29,8 +33,8 @@ export function Page2(){
                         {/* so eventally i am conditionally rendering this or pics */}
                         <div className="left-third">
                         {projects.map((project) => (
-                            <p className="list">{project}</p>        
-                        )) }
+                                <p className="list">{project.title}</p>  
+                        ))}
                         </div>
 
                        

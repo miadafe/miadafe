@@ -8,7 +8,7 @@ import { Note} from './Note';
 
 export function ScrapbookPage(){
 const scrapbookPage ={
-    text:"heyy uhhhh .. is this thing on?",
+    text:"heyy uhhhh .. is this thing changing?",
     img:iconA,
     polaroidScribble:"coffee"
 }

@@ -8,7 +8,7 @@ import { Note} from './Note';
 import { useStoreActions, useStoreState } from "easy-peasy";
 
 
-export function PhotoProject(props){
+export function PhotoProject(){
 
     //const projectViewModel = useStoreState(state => state.photoProjectModel);
     //const pics = props.photos;

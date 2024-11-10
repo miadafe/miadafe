@@ -14,12 +14,12 @@ export function Page3(){
     return(
         <div className="centered-columns">
             <Alert></Alert>
-            {/* <BookDiary></BookDiary> */}
+            <BookDiary></BookDiary>
 
 
-            <ScrapbookPage/>
+            {/* <ScrapbookPage/>
             
-            <ScrapbookPage/>
+            <ScrapbookPage/> */}
         </div>
     )
 }

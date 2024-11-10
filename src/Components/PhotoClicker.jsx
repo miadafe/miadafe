@@ -28,7 +28,7 @@ function incrementwheelNum() {
 
     changeWheelNum(wheelNumber += 1);
 
-    if (wheelNumber > polaroids.length -1){
+    if (wheelNumber == polaroids.length){
         changeWheelNum(0);
         console.log("set to 0:", wheelNumber)
     }
