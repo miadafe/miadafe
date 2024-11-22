@@ -26,7 +26,8 @@ export function PhotoProject(){
 
             <div>
             {projectViewModels.map((project, index) => (
-              <div key={index}>
+              <div key={index} id={project.id}>
+                 
                 <h2 className='project-title'>{project.title}</h2>
                 <p className='project-caption'>{project.photoCaption}</p>
                 <p className='project-dateFinished'>{project.dateFinished}</p>

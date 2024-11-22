@@ -1,12 +1,28 @@
-.project-img{
-    width:220px;
-    margin: 8px 8px;
+.entry-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #cb1999;
+    border-radius: 10px;
+    margin:auto;
+    margin-top: 10px;
+    width:80%;
+    padding:10px;
 }
 
-.project-caption{
+.entry-title{
     text-align: left;
 }
 
-.project-dateFinished{
+.entry-author{
+    text-align: right;
+}
+
+.entry-content{
+    text-align: left;
+    line-height: 1.8em;
+}
+
+.entry-dateFinished{
+    font-size: 16px;
     text-align: right;
 }

@@ -17,6 +17,12 @@ code {
 }
 
 .left-third{
+  top: 0;
+    bottom:0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
+  position:fixed;
   display:flex;
   flex-direction: column;
   width: 33%;
@@ -24,6 +30,7 @@ code {
 
 .right-2-thirds{
   width: 66%;
+  padding-left: 33%;
 }
 
 .centered-columns{
@@ -63,6 +70,7 @@ h2 {
 }
 
 p {
+  font-size: 18px;
   font-family: "Lucida Console", monospace;
   color: #dafe11;
 }
@@ -72,6 +80,7 @@ p {
 }
 
 .list{
+  background-color: transparent;
   margin:60px;
   color: #dafe11;
   font-family: "Lucida Console", monospace;

@@ -28,6 +28,7 @@ import canaan from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/canaan.
 import graduates from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/graduates.jpg';
 import lucas from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/lucas.jpg';
 import mash from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/mash-tulip.jpg';
+import internal from 'stream';
 
 //import diaries from '/Users/miadafe/Documents/web_dev/mckd_web/src/assets/book-diaried.txt';
 
@@ -41,6 +42,7 @@ export interface BookDiaryModel{
 }
 
 export interface PhotoProjectModel{
+    id: number;
     title: string,
     photos:string[],
     photoCaption:string,
@@ -74,27 +76,36 @@ const store: StoreModel= {
     photoProjectModels:
     [
     {
+        id: 0,
         title:"Star Bikini",
         photos:[starBikini, bikiniToggles, bikiniStones, netSkirt],
         photoCaption:"filler text",
         dateFinished: "some date"
     },
-        {title:"Swirly Bag",
+        {
+        id: 1,
+        title:"Swirly Bag",
         photos:[swirlyBag, swirlyBagHolding],
         photoCaption:"filler text",
         dateFinished: "08.05.2022"
     },
-        {title:"Saturn Bag",
+        {
+        id: 2,
+        title:"Saturn Bag",
         photos:[saturnDesign, saturnBeads, saturnProcess, saturnBag],
         photoCaption:"filler text",
         dateFinished: "17.04.2024"
     },
-    {title:"Peach Bag",
+    {
+        id: 3,
+        title:"Peach Bag",
         photos:[peachBag, peachBagHolding],
         photoCaption:"filler text",
         dateFinished: "sometime"
     },
-        {title:"Check Scarf",
+        {
+        id: 4,    
+        title:"Check Scarf",
         photos:[checkScarf, scarfModel1],
         photoCaption:"filler text",
         dateFinished: "some other time"
@@ -114,7 +125,7 @@ const store: StoreModel= {
             title:"Natives: Race & Class in the Ruins of Empire",
             author: "Akala",
             photos:[],
-            content:"",
+            content:"Natives was a joy to read despite going over some of the most horrifying epic of the British Empire. This is due to Akala's writing style, which felt like checking in with a friend every time I picked this book up.",
             photoCaption:"photo caption",
             dateFinished: "26.10.24"
         },

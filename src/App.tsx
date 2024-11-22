@@ -12,6 +12,7 @@ import { Layout } from './Layout'
 function App() {
   return (
     
+    <div className='all-content-test'>
       <Router>
         <Routes>
           <Route element={<Layout/>}>
@@ -22,6 +23,7 @@ function App() {
           </Route>
         </Routes>
       </Router>
+      </div>
     
   );
 }

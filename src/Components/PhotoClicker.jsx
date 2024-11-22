@@ -13,7 +13,7 @@ import "../../src/index.css"
 
 
 export function PhotoClicker(){
-    const polaroids = useStoreState(state => state.polaroids);
+    //const polaroids = useStoreState(state => state.polaroids);
 
     let wheelNumber = useStoreState(state => state.wheelNumber);
 
@@ -23,28 +23,35 @@ export function PhotoClicker(){
 function incrementwheelNum() {
     
     if(wheelNumber === null){
+        console.log("setting offset to 0");
         changeWheelNum(0);
     }
 
+    console.log("before inscreasing:", wheelNumber);
     changeWheelNum(wheelNumber += 1);
 
-    if (wheelNumber == polaroids.length){
-        changeWheelNum(0);
-        console.log("set to 0:", wheelNumber)
-    }
-    console.log(wheelNumber);
+    // if (wheelNumber == polaroids.length){
+    //     changeWheelNum(0);
+    //     console.log("set to 0:", wheelNumber)
+    // }
+    
 }
 
 function decrementwheelNum() {
-    console.log("wheelNumber before setting", wheelNumber);
+    if(wheelNumber === null){
+        console.log("setting offset to 0");
+        changeWheelNum(0);
+    }
+    //console.log("wheelNumber before setting", wheelNumber);
 
+    console.log("before decreasing:", wheelNumber);
     changeWheelNum(wheelNumber -= 1);
 
-    if (wheelNumber < 0){
-        changeWheelNum(polaroids.length - 1);
-        //console.log("set to 0:", wheelNumber)
-    }
-    console.log(wheelNumber);
+    // if (wheelNumber < 0){
+    //     changeWheelNum(polaroids.length - 1);
+    //     //console.log("set to 0:", wheelNumber)
+    // }
+    //console.log(wheelNumber);
 }
     
     return(

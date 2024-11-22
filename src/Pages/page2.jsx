@@ -10,6 +10,7 @@ import { getStaticContextFromError } from "@remix-run/router";
 import { PhotoView } from "../Components/PhotoView";
 import { PhotoProject } from "../Components/PhotoProject";
 import { useStoreState } from "easy-peasy";
+import React from "react";
 
 
 export function Page2(){
@@ -21,30 +22,53 @@ export function Page2(){
 
     let [view, setView] = useState(0);
 
+    const ScrollToView = (id) => {
+
+        const display = document.getElementById(id);
+        if (display){
+            display.scrollIntoView();
+        }
+    
+    }
+
 
     return(
         <div>
             <div className="horizontal">
-                {/* works at bringing in from state but not to plan anymore !!
-                <Panel></Panel> */}
 
                 <div className="scrolling">
                         
-                        {/* so eventally i am conditionally rendering this or pics */}
                         <div className="left-third">
-                        {projects.map((project) => (
-                                <p className="list">{project.title}</p>  
-                        ))}
+                            {projects.map((project) => (
+                                <>
+                                {/* new way of doing this that actually works you need to use useRef -> instructions in GPT cba now lol */}
+                                    {/* <a href={`/page2/#${project.id}`} className="list">{project.title}</a> */}
+                                    <button key={project.id} onClick={() => ScrollToView(project.id)} className="list">{project.title}</button>
+                                    {/* <Link to={`/page2/#${project.id}`} className="list">{project.title}</Link> */}
+                                    {/* <p className="list">{project.title}</p>   */}
+                                </>
+                            ))}
                         </div>
 
                        
                 </div>
-
-
                         <div className="right-2-thirds">
-                            {/* make photo view work like panel up there !! */}
-                            {/* <PhotoView></PhotoView>    */}
-                            <PhotoProject></PhotoProject>
+                            {/* <PhotoProject></PhotoProject> */}
+                            <div>
+                            {projects.map((project, index) => (
+                            <div key={index} id={project.id}>
+                                
+                                <h2 className='project-title'>{project.title}</h2>
+                                <p className='project-caption'>{project.photoCaption}</p>
+                                <p className='project-dateFinished'>{project.dateFinished}</p>
+                                <div>
+                                {project.photos.map((photo, i) => (
+                                    <img className='project-img' key={i} src={photo} alt={`${project.title} ${i}`} />
+                                ))}
+                                </div>
+                            </div>
+                            ))}
+                            </div>
                         </div>
             </div>
         </div>
